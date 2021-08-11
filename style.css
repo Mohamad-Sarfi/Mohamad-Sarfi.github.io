@@ -97,6 +97,11 @@ legend{
     margin: 20px;
 }
 
+.contact-image:hover {
+    width: 80px;
+    height: 80px;
+}
+
 
 #contact-btn:hover {
     background-color: white;
