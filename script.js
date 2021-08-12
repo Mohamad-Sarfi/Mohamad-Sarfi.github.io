@@ -48,3 +48,22 @@ async function contact_collapse(){
     }
     
 }
+
+
+/********************************************************LANGUAGES**************** */
+const language = document.getElementById("language-btn");
+const language_images = document.querySelector(".language-imgs")
+const persian = document.getElementById("language-fa")
+const english = document.getElementById("language-en")
+const deutsch = document.getElementById("language-de")
+
+language.addEventListener('click', ()=>{
+    language.style.display = 'none';
+    persian.classList.add("visible-inline")
+    persian.classList.remove("hidden")
+    console.log(persian.classList)
+    deutsch.classList.add("visible-inline")
+    deutsch.classList.remove("hidden")
+    english.classList.add("visible-inline")
+    english.classList.remove("hide  ")
+});

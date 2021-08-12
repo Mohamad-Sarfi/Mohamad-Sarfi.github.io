@@ -36,6 +36,28 @@ h1 {
 }
 
 
+#language-btn {
+    margin-right: 25px;
+}
+
+.visible-inline {
+    display: inline;
+}
+
+.hide{
+    display: none;
+}
+
+.language-img {
+    width: 40px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+#language-div{
+    display: flex;
+}
+
 #experienceField {
     margin: 40px 80px;
     text-align: center;
