@@ -51,7 +51,7 @@ async function contact_collapse(){
 
 
 /********************************************************LANGUAGES**************** */
-const language = document.getElementById("language-btn");
+/*const language = document.getElementById("language-btn");
 const language_images = document.querySelector(".language-imgs")
 const persian = document.getElementById("language-fa")
 const english = document.getElementById("language-en")
@@ -66,4 +66,4 @@ language.addEventListener('click', ()=>{
     deutsch.classList.remove("hidden")
     english.classList.add("visible-inline")
     english.classList.remove("hide  ")
-});
+});*/
