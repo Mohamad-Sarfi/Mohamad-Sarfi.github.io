@@ -35,9 +35,16 @@ const contact_btn = document.getElementById("contact-btn");
 const contacts_list = document.getElementById("contacts-lists");
 
 contact_btn.addEventListener('click', contact_collapse)
-
+let contact_toggle = 0;
 async function contact_collapse(){
-    console.log("clicked")
-    contacts_list.className = 'fadeIn';
-    contacts_list.style.opacity = '1.0';
+    if (contact_toggle == 0){
+        contacts_list.className = 'fadeIn';
+        contacts_list.style.opacity = '1.0';
+        contact_toggle++;    
+    }
+    else {
+        contacts_list.style.opacity = '0';
+        contact_toggle--;
+    }
+    
 }
