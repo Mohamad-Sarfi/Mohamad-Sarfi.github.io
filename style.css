@@ -1,197 +1,238 @@
-body{
-    background-color: rgb(223, 223, 223);
+body {
+  background-color: rgb(223, 223, 223);
 }
 
-
-
-#brand{
-    color: rgb(30, 30, 30);
-    font-weight: 600;
-    border-right: rgb(97, 97, 97) solid 1.5px;
-    height: 50px;
+#brand {
+  color: rgb(30, 30, 30);
+  font-weight: 600;
+  border-right: rgb(97, 97, 97) solid 1.5px;
+  height: 50px;
 }
 
 h1 {
-    color: blueviolet;
-    margin-top: 30px;
+  color: blueviolet;
+  margin-top: 30px;
 }
 
 .myLi {
-    margin: 10px 10px;
+  margin: 10px 10px;
 }
 
 .links {
-    color: rgb(37, 37, 37);
-    text-decoration: none;
-    font-weight: 550;
-    margin-left: 30px;
+  color: rgb(37, 37, 37);
+  text-decoration: none;
+  font-weight: 550;
+  margin-left: 30px;
 }
 
-
-
 .myNav {
-    border-bottom: rgb(223, 223, 223) solid 2px;
-    display: inline;
-    height: 80px;
-    align-items: center;
+  border-bottom: rgb(223, 223, 223) solid 2px;
+  display: inline;
+  align-items: center;
 }
 
 #topTitle {
-    justify-self: end;
+  justify-self: end;
 }
 
-
 #language-btn {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 
 .visible-inline {
-    display: inline;
+  display: inline;
 }
 
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 .language-img {
-    width: 40px;
-    height: 25px;
-    border-radius: 5px;
+  width: 40px;
+  height: 25px;
+  border-radius: 5px;
 }
 
-
-
 #experienceField {
-    margin: 40px 80px;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgb(0, 127, 212);
-    color: white;
-    border-radius: 7px;
+  margin: 40px 80px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgb(0, 127, 212);
+  color: white;
+  border-radius: 7px;
 }
 
 .accordion-text {
-    color: black;
+  color: black;
 }
 
-legend{
-    margin: 40px;
-    display: inline;
+.job-description {
+  text-align: left;
+  font-size: 1.1em;
 }
 
+.projects-list{
+  text-align: left;
+  list-style: circle;
+}
+legend {
+  margin: 40px;
+  display: inline;
+}
 
 #home {
-    width: 100%;
-    height: 500px;
-    background-image: url("images/cover1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 500px;
+  background-image: url("images/cover1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-#black-cover{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+#black-cover {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
-#contact-btn{
-    border-radius: 35px;
-    height: 55px;
-    width: 160px;
-    text-align: center;
-    justify-content: center;
-    border: solid rgb(0, 127, 212) 4px;
-    color: rgb(0, 127, 212);
-    font-size: 20px;
-    font-weight: bolder;
-    margin-bottom: 30px;
+#contact-btn {
+  border-radius: 35px;
+  height: 55px;
+  width: 160px;
+  text-align: center;
+  justify-content: center;
+  border: solid rgb(0, 127, 212) 4px;
+  color: rgb(0, 127, 212);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 30px;
 }
 
 #contacts-lists {
-    margin-top: 20px;
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+  height: 100px;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-image {
+  margin: 20px;
+}
+
+.contact-image:hover {
+  width: 80px;
+  height: 80px;
+}
+
+#contact-btn:hover {
+  background-color: white;
+}
+
+#contact-btn-holder {
+  justify-content: center;
+  text-align: center;
+  margin-top: 130px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-direction: normal;
+  opacity: 1;
+}
+
+/************************************* Typing effect ***************************************************************/
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.typing-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-cursor {
+  margin-top: 70px;
+  display: inline-block;
+  width: 2px;
+  height: 42px;
+  background-color: white;
+  margin-left: 8px;
+  animation: blink 0.6s linear infinite alternate;
+}
+
+#sentence {
+  color: white;
+  font-weight: 650;
+  font-size: 40pt;
+  margin-top: 70px;
+}
+
+@media (max-width: 600px) {
+  #sentence {
+    font-weight: 550;
+    font-size: 20pt;
+    margin: 15px;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  #contact-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    background-image: url("images/call.png");
+    background-origin: content-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: contain;
+    padding: 6px;
+    background-repeat: no-repeat;
+    width: 60px;
+    height: 60px;
+    font-size: 0%;
+    z-index: 100;
+  }
+
+  #contacts-lists {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
     display: flex;
     width: 100%;
     height: 100px;
     opacity: 0;
     justify-content: center;
     align-items: center;
-}
-
-.contact-image {
-    margin: 20px;
-}
-
-.contact-image:hover {
-    width: 80px;
-    height: 80px;
-}
-
-
-#contact-btn:hover {
-    background-color: white;
-}
-
-
-#contact-btn-holder {
-    justify-content: center;
-    text-align: center;
-    margin-top: 130px;
-}
-
-@keyframes fadeIn {
-    0%   {opacity: 0;}
-    25%  {opacity: 0.25;}
-    50%  {opacity: 0.5;}
-    100% {opacity: 1;}
+    z-index: 101;
   }
 
-
-.fadeIn {
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-direction: normal;
-    opacity: 1.0;
-}
-
-/************************************* Typing effect ***************************************************************/
-
-@keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 1;}
-    100% {opacity: 1;}
-}
-.typing-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-.input-cursor {
-    margin-top: 70px;
-    display: inline-block;
-    width: 2px;
-    height: 42px;
-    background-color: white;
-    margin-left: 8px;
-    animation: blink .6s linear infinite alternate;
-}
-
-#sentence {
-    color: white;
-    font-weight: 650;
-    font-size: 40pt;;
-    margin-top: 70px;
-}
-
-@media (max-width: 600px) {
-    
-    #sentence {
-        font-weight: 500;
-        font-size: 20pt;
-        margin: 15px;
-        text-align: center;
-    }
-    
 }
