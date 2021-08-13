@@ -37,6 +37,7 @@ const contacts_list = document.getElementById("contacts-lists");
 contact_btn.addEventListener('click', contact_collapse)
 let contact_toggle = 0;
 async function contact_collapse(){
+    contact_btn.style.display = 'none';
     console.log(contact_toggle);
     if (contact_toggle == 0){
         contacts_list.className = 'fadeIn';
