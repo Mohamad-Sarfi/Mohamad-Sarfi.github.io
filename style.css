@@ -169,7 +169,7 @@ legend {
   text-align: left;
   margin: auto;
   width: auto;
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 #aboutMe-container {
@@ -269,7 +269,7 @@ legend {
   margin-top: 70px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 991px) {
 
   #mobile-header {
     display: inline;
