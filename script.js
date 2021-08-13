@@ -37,19 +37,43 @@ const contacts_list = document.getElementById("contacts-lists");
 contact_btn.addEventListener('click', contact_collapse)
 let contact_toggle = 0;
 async function contact_collapse(){
+    console.log(contact_toggle);
     if (contact_toggle == 0){
         contacts_list.className = 'fadeIn';
         contacts_list.style.opacity = '1.0';
-        contact_toggle++;    
+        contacts_list.style.display = 'flex';
+        contact_toggle++; 
+
     }
     else {
         contacts_list.style.opacity = '0';
+        contacts_list.style.display = 'none';
         contact_toggle--;
     }
     
 }
 
+/*************************************************************AGE****** */
 
+const ageElement = document.getElementById("age");
+const dayElement = document.getElementById("day");
+
+const date = new Date();
+const year = date.getFullYear();
+const month = date.getMonth();
+const day = date.getDate()
+
+let age = 0;
+let exact_age = 0;
+age = year - 1995;
+
+const start = new Date(year, 5,25);
+let diff = date - start;
+diff = Math.floor(diff / 1000 / 60 / 60 / 24);
+console.log(diff)
+
+ageElement.innerHTML = age;
+dayElement.innerHTML = diff;
 /********************************************************LANGUAGES**************** */
 /*const language = document.getElementById("language-btn");
 const language_images = document.querySelector(".language-imgs")
