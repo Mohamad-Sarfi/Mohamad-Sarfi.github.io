@@ -92,3 +92,19 @@ language.addEventListener('click', ()=>{
     english.classList.add("visible-inline")
     english.classList.remove("hide  ")
 });*/
+
+/********************************************************************Mobile menu***** */
+const menu_btn = document.getElementById("menu-btn");
+const side_menu = document.getElementById("side-nav");
+let menu_toggle = 0;
+
+menu_btn.addEventListener('click', () => {
+    if (menu_toggle == 0){
+        side_menu.style.display = "block";
+        menu_toggle++;
+    }
+    else {
+        side_menu.style.display = "none";
+        menu_toggle--;
+    }
+})
