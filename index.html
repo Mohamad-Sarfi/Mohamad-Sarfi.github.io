@@ -19,7 +19,7 @@
 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">    
                         <li class="nav-item myLi"> <p class="nav-link links myLi navbar-brand" id="brand" href="#"> Mohamad Sarfi</p>  </li>
-                        <li class="nav-item myLi"> <a class="nav-link active links myLi" href="#"> Home</a>  </li>
+                        <li class="nav-item myLi"> <a class="myLi nav-link active links " href="#"> Home</a>  </li>
                         <li class="nav-item myLi"><a class="nav-link links myLi" href="#aboutMe">About me</a>  </li>
                         <li class="nav-item myLi"><a class="nav-link links myLi" href="#experience">Experiences </a> </li>
                         <li class="nav-item myLi"> <a class="nav-link links myLi" href="#skills"> Skills </a> </li>
@@ -35,10 +35,10 @@
                 </div>
             </ul>
             <ul id="side-nav">
-                <li class="nav-item">Home</li>
-                <li class="nav-item">About me</li>
-                <li class="nav-item">Experiences</li>
-                <li class="nav-item">Skills</li>
+                <li class="nav-item side-nav-item"> <a class="side-link" href="#home"> <span class="side-nav-item-txt">Home</span> <img class="side-nav-icon" src="images/side_nav_icons/home.png"></a> </li>
+                <li class="nav-item side-nav-item"> <a class="side-link" href="#aboutMe"><span class="side-nav-item-txt">About me</span><img class="side-nav-icon" src="images/side_nav_icons/user.png"></a> </li>
+                <li class="nav-item side-nav-item"><a class="side-link" href="#experience"> <span class="side-nav-item-txt">Experiences</span><img class="side-nav-icon" src="images/side_nav_icons/job.png"></a> </li>
+                <li class="nav-item side-nav-item"><a class="side-link" href="#skills"> <span class="side-nav-item-txt">Skills</span> <img class="side-nav-icon" src="images/side_nav_icons/code.png"> </a> </li>
             </ul>
     </header>
     <div id="home">
@@ -127,6 +127,8 @@
 
     <!-- -----------------------------------------------------------SKILLS----------------------------->
     <div id="skills">
+        <h3 id="skill-title" >Skills</h3>    
+    
         <div class="skill-badges" >
             <div class="skill-card" id="python">
                 <img class="skill-img" src="images/python.png" alt="python">
@@ -199,14 +201,16 @@
             <img class="close-x" id="close-skill-details-btn" alt="close" src="images/cancel.png">
             <img src="images/android.png" alt="#" " id="skill-img-details">
             <h2 id="skill-details-title"></h2>
+            <p id="skill-explain"></p>
+            <div id="skill-detail-list"></div>
         </div>    
     </div>
     
     <!-- -------------------------------------------------------- LANGUAGES----------------------------------------->
     <div id="languages">
-        <legend class="job-title">
+        <h3 id="lang-title">
             Languages
-        </legend>
+        </h3>
         <div id="language-card" class="container-fluid">
             <div class="row">
                 <div class="col">

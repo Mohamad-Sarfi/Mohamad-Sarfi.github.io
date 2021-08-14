@@ -24,6 +24,7 @@ h1 {
 
 .myLi {
   margin: 10px 10px;
+  color: black;
 }
 
 .links {
@@ -55,6 +56,10 @@ h1 {
 
 #language-btn {
   margin-right: 25px;
+}
+
+#language-div{
+  display: none;
 }
 
 .visible-inline {
@@ -205,6 +210,13 @@ legend {
   padding: 8%;
 }
 
+#skill-title {
+  text-align: center;
+  margin: 30px;
+  font-weight: 600;
+  color: rgb(0, 127, 212);
+}
+
 .skill-badges{
   display: flex;
   justify-content: space-around;
@@ -271,10 +283,33 @@ legend {
   font-weight: 600;
   font-size: 1.2em;
   margin-top: 4px;
+  font-weight: 600;
 }
 .skill-img {
   width: 80px;
   height: auto;
+}
+
+#skill-explain {
+  font-size: 1em;
+  text-align: justify;
+  font-weight: 550;
+}
+
+#skill-detail-list {
+  list-style: square;
+  list-style-position: inside;
+  text-align: left;
+  display: flex;
+  flex-shrink: 4;
+}
+
+.skill-detail-list-li {
+  display: block;
+  font-size: 1em;
+  list-style: circle;
+  margin: 10px;
+  font-weight: 550;
 }
 
 
@@ -349,9 +384,15 @@ legend {
   text-align: center;
 }
 
+#lang-title{
+  font-weight: 550;
+  color: white;
+  margin-bottom: 25px;
+}
+
 #languages-card {
   display: flex;
-
+  flex-shrink: 3;
 }
 
 .language-col{
@@ -369,15 +410,42 @@ legend {
   display: block;
 }
 
+/********************************************** MOBILE ****************************************/
+
 @media (max-width: 991px) {
 
 
   #side-nav{
     background-color: white;
     position: fixed;
-    top: 50%;
+    top: 30%;
     right: 0;
     z-index: 103;
+    height: auto;
+    padding: 5px 1%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+
+  .side-nav-item {
+    margin: 30px;
+  }
+
+  .side-nav-icon {
+    width: 25px;
+    margin-left: 5px;
+    position: relative;
+    right: 12px;
+  }
+
+  .side-nav-item-txt {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-right: 20px;
+    color: white;
+    display: none;
   }
 
   #mobile-header {
@@ -386,6 +454,8 @@ legend {
     margin: 5px 20px;
     font-weight: 550;
   }
+
+  
 
   .myNav {
     height: 16%;

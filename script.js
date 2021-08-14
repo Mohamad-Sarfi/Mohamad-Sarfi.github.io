@@ -116,22 +116,70 @@ const list_of_skills = document.getElementsByClassName("skill-card");
 const skills_details = document.getElementById("skill-details-back");
 const skills_details_img = document.getElementById("skill-img-details")
 const skill_details_title = document.getElementById("skill-details-title");
+const skill_explain = document.getElementById("skill-explain");
+const skill_detail_list = document.getElementById("skill-detail-list");
 
 const close_x = document.getElementById("close-skill-details-btn");
 close_x.addEventListener('click', () => {
     skills_details.style.display = 'none';
+    let child = skill_detail_list.lastElementChild;
+    console.log(child);
+
+    while(child){
+        skill_detail_list.removeChild(child);
+        child = skill_detail_list.lastElementChild;
+    }
 });
 
 const skills_description = {
     'python' : "I've been writing Python code for almost 2 years, and I'm familiar with SciPy stack (Numpy, Pandas, Matplotlib, Seaborn), Machine learning libraries (Tensorflow, Pytorch) and PyQt.",
-    "JavaScript": "JavaScript is my favorite language. I"
+    "javascript": "JavaScript is my favorite language. I've been teaching JavaScript for almost 1 year and have mastered most details and concepts of it (ES6). I also do some self-defined web projects, hence I've included HTML/CSS as well.",
+    'java': "I've been in touch with Java ever since I was in college, so it's been about 7 years since I know Java and I've developed a couple of simple Android apps with it.",
+    'kotlin': "I've been teaching this wonderful language for a couple of months and I'm also developing my 'farm management' android app with it.",
+    'sql': "As a computer graduate I feel confident about basic SQL instructions (CRUD), I've also been using SQLite for my android app and desktop finacial management app and I'm also familiar with Postgresql and MongoDB",
+    'uiux': "As I'm intersted in web and app design and beside being a computer science teacher I've been working as a graphic designer, creating posters, infographics and... ",
+    'ai': "Data science and Artificial intelligence are my favorite fields. In my free time I usually take AI related online classes.",
+    'android' : "I've developed a farm management app for android and I'm familiar with Modern Android Development (MAD) like Jetpack, Room, MVVM architecture and ... "
+
 }
+
+const skills_sublist = {
+    'python': ['Pandas', 'Numpy', 'Matplotlib', 'Seaborn', 'PyQt', 'Tensorflow', 'Jupyter'],
+    'javascript': ['Vanilla ES6', 'React', 'Redux', 'Next', 'Node', 'D3'  ],
+    'java': ['Java EE','Android SDK'],
+    'kotlin' : ['Croutines', 'flow', 'Android SDK'],
+    'sql': ['SQLite', 'Postgresql', 'MongoDB'],
+    'uiux': ['Photoshop', 'Illustrator', 'InDesign', 'Adobe XD', 'Material Design'],
+    'ai': ['Data Analysis', 'Machine learning', 'Deep learning', 'Computer Vision'],
+    'android': ['Android SDK', 'Jetpack', 'Android Studio', 'MVVM', 'Material design', 'Room']
+}
+
+let new_li;
 
 Array.from(list_of_skills).forEach(e => {
     e.addEventListener('click', () => {
         skills_details.style.display = 'block';
         skills_details_img.src = `images/${e.id}.png`;
         skill_details_title.innerHTML = `${e.id}`;
+        skill_explain.innerHTML = skills_description[e.id];
+
+        for (li of skills_sublist[e.id]){
+            new_li = document.createElement('li');
+            new_li.innerHTML = li;
+            new_li.classList.add("skill-detail-list-li");
+            skill_detail_list.appendChild(new_li);
+        }
+
     });
 });
 
+
+
+/*******************************************************************SIDE NAV*********************** */
+const side_nav = document.getElementById("side-nav");
+const side_links = document.getElementsByClassName("side-link");
+Array.from(side_links).forEach(e => {
+    e.addEventListener('click', () => {
+        side_nav.style.display = 'none';
+    })
+})
