@@ -428,6 +428,15 @@ legend {
     border-top-left-radius: 15px;
   }
 
+
+  .input-cursor {
+    margin-top: 60%;
+  }
+  
+  #sentence {
+    margin-top: 60%;
+  }
+
   .side-nav-item {
     margin: 30px;
   }
@@ -435,7 +444,6 @@ legend {
   .side-nav-icon {
     width: 25px;
     margin-left: 5px;
-    position: relative;
     right: 12px;
   }
 
