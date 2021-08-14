@@ -94,7 +94,7 @@
                 </div>
                 <div class="accordion-item">
                 <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="job-description accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     Self-employed developer and data analyst
                     </button>
                 </h2>
@@ -127,67 +127,82 @@
 
     <!-- -----------------------------------------------------------SKILLS----------------------------->
     <div id="skills">
-        <div class="skill-badges">
-            <div class="skill-card">
+        <div class="skill-badges" >
+            <div class="skill-card" id="python">
                 <img class="skill-img" src="images/python.png" alt="python">
-                <p class="skill-name">Python</p>
+                <p class="skill-name" id="python">Python</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="skill-name">90%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/js.png" alt="python">
+            <div class="skill-card" id="javascript">
+                <img class="skill-img" src="images/javascript.png" alt="python">
                 <p class="skill-name">javascript</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <p class="skill-name">90%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/java.jpeg" alt="python">
+            <div class="skill-card" id="java">
+                <img class="skill-img" src="images/java.png" alt="java">
                 <p class="skill-name">Java</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                 <p class="skill-name">60%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/kotlin.jpg" alt="python">
+            <div class="skill-card" id="kotlin">
+                <img class="skill-img" src="images/kotlin.png" alt="kotlin">
                 <p class="skill-name">Kotlin</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <p class="skill-name">70%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/sql.webp" alt="python">
+            <div class="skill-card" id="sql">
+                <img class="skill-img" src="images/sql.png" alt="sql">
                 <p class="skill-name">Databases</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
                 <p class="skill-name">70%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/uiux.png" alt="python">
+            <div class="skill-card" id="uiux">
+                <img class="skill-img" src="images/uiux.png" alt="ui/ux">
                 <p class="skill-name">Design</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <p class="skill-name">70%</p>
             </div>
-            <div class="skill-card">
-                <img class="skill-img" src="images/ml.png" alt="python">
+            <div class="skill-card" id="ai">
+                <img class="skill-img" src="images/ai.png" alt="Artificial Intellignece">
                 <p class="skill-name">A.I</p>
                 <div class="progress">
                     <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                   </div>
                   <p class="skill-name">70%</p>
             </div>
+            <div class="skill-card" id="android">
+                <img class="skill-img" src="images/android.png" alt="Android">
+                <p class="skill-name">Android</p>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <p class="skill-name">60%</p>
+            </div>
         </div>
     </div>
-
-    <!-- -------------------------------------------------------- LANGUAGES---------------------->
+    <div id="skill-details-back">
+        <div id="skill-details">
+            <img class="close-x" id="close-skill-details-btn" alt="close" src="images/cancel.png">
+            <img src="images/android.png" alt="#" " id="skill-img-details">
+            <h2 id="skill-details-title"></h2>
+        </div>    
+    </div>
+    
+    <!-- -------------------------------------------------------- LANGUAGES----------------------------------------->
     <div id="languages">
         <legend class="job-title">
             Languages

@@ -83,10 +83,12 @@ h1 {
 
 .accordion-text {
   color: black;
+  font-size: 1em;
 }
 
 .job-description {
   text-align: left;
+  font-size: 1em;
 }
 
 .projects-list{
@@ -220,7 +222,49 @@ legend {
   border-bottom: rgb(0, 127, 212) solid 6px;
 }
 
+#skill-details-back {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 12%;
+  padding-top: 5%;
+  display: none;
+}
 
+
+
+#skill-details {
+  width: 90%;
+  height: 80%;
+  padding: 2% 5%;
+  margin: 5%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+  z-index: 100;
+  border-radius: 30px;
+  margin: auto;
+  text-align: center;
+  border-bottom: rgb(0, 127, 212) solid 8px;
+  position: relative;
+}
+
+#skill-img-details{
+  width: 100px;
+  height: auto;
+}
+
+.close-x {
+  width: 20px;
+  height: auto;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 112;
+}
+
+#close-skill-details-btn:hover {
+  cursor: pointer;
+}
 
 .skill-name {
   text-align: center;
@@ -233,11 +277,7 @@ legend {
   height: auto;
 }
 
-#python {
-  background-image: url("images/python.png");
-  width: 70px;
-  height: auto;
-}
+
 
 
 
@@ -317,6 +357,7 @@ legend {
 .language-col{
   display: flex;
   margin: 20px;
+  width: 30%;
 }
 
 .language-flag-name {

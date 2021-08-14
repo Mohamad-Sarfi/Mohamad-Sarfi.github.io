@@ -73,6 +73,7 @@ let diff = date - start;
 diff = Math.floor(diff / 1000 / 60 / 60 / 24);
 console.log(diff)
 
+
 ageElement.innerHTML = age;
 dayElement.innerHTML = diff;
 /********************************************************LANGUAGES**************** */
@@ -108,3 +109,29 @@ menu_btn.addEventListener('click', () => {
         menu_toggle--;
     }
 })
+
+
+/***************************************************************************SKILLS DETAILS ***********/
+const list_of_skills = document.getElementsByClassName("skill-card");
+const skills_details = document.getElementById("skill-details-back");
+const skills_details_img = document.getElementById("skill-img-details")
+const skill_details_title = document.getElementById("skill-details-title");
+
+const close_x = document.getElementById("close-skill-details-btn");
+close_x.addEventListener('click', () => {
+    skills_details.style.display = 'none';
+});
+
+const skills_description = {
+    'python' : "I've been writing Python code for almost 2 years, and I'm familiar with SciPy stack (Numpy, Pandas, Matplotlib, Seaborn), Machine learning libraries (Tensorflow, Pytorch) and PyQt.",
+    "JavaScript": "JavaScript is my favorite language. I"
+}
+
+Array.from(list_of_skills).forEach(e => {
+    e.addEventListener('click', () => {
+        skills_details.style.display = 'block';
+        skills_details_img.src = `images/${e.id}.png`;
+        skill_details_title.innerHTML = `${e.id}`;
+    });
+});
+
