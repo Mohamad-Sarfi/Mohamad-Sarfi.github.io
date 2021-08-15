@@ -88,12 +88,10 @@ h1 {
 
 .accordion-text {
   color: black;
-  font-size: 1em;
 }
 
 .job-description {
   text-align: left;
-  font-size: 1em;
 }
 
 .projects-list{
@@ -107,7 +105,6 @@ legend {
 
 .job-title {
   text-align: center;
-  font-size: 1.5em;
   color: white;
 }
 
@@ -410,6 +407,42 @@ legend {
   display: block;
 }
 
+/************************************************CERTIFICATE **********************************/
+
+#certifications{
+  width: 100%;
+  height: auto;
+  pad: 5px;
+  margin-top: 30px;
+}
+
+#certificate-title{
+  text-align: center;
+  font-weight: 550;
+  color: rgb(0, 127, 212);
+}
+
+#cert-list {
+  text-align: left;
+  width: auto;
+}
+
+.cert-list-item {
+  text-align: left;
+  margin: 25px;
+  margin-bottom: 10px;
+}
+
+.cert-inst{
+  color: rgb(0, 127, 212);
+  margin-right: 20px;
+}
+
+#cert-list-container {
+  width: 70%;
+  margin: auto;
+}
+
 /********************************************** MOBILE ****************************************/
 
 @media (max-width: 991px) {
@@ -526,4 +559,16 @@ legend {
     font-size: 1.5em;
   }
 
+  .cert-inst{
+    display: block;
+  }
+
+  .credit-link{
+    display: inline;
+  }
+
+  #cert-list-container {
+    width: 90%;
+    margin: auto;
+  }
 }
