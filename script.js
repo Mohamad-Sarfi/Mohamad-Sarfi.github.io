@@ -1,3 +1,26 @@
+//**********************************************************************Elements of the page *******/
+const contact_btn = document.getElementById("contact-btn");
+const contacts_list = document.getElementById("contacts-lists");
+
+const ageElement = document.getElementById("age");
+const dayElement = document.getElementById("day");
+
+const menu_btn = document.getElementById("menu-btn");
+const side_menu = document.getElementById("side-nav");
+
+const side_nav = document.getElementById("side-nav");
+const side_links = document.getElementsByClassName("side-link");
+
+//Main divs of the document
+const main_divs = {}
+main_divs[home] = document.getElementById('home');
+main_divs[aboutMe] = document.getElementById('aboutMe');
+main_divs['experience'] =  document.getElementById("experience");
+main_divs[skills]  = document.getElementById('skills')
+
+/************************************************************************************************/
+
+
 async function typeSentence(sentence, eleRef, delay = 300){
     const letters = sentence.split("");
     let i = 0;
@@ -27,12 +50,11 @@ function waitForMS(ms) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-typeSentence("Mohamad Sarfi, developer and data analyst", "sentence")
+typeSentence("Mohamad Sarfi", "sentence")
 deleteSentence("sentence")
 
 /***********************************************************************************Contact button***************/
-const contact_btn = document.getElementById("contact-btn");
-const contacts_list = document.getElementById("contacts-lists");
+
 
 contact_btn.addEventListener('click', contact_collapse)
 let contact_toggle = 0;
@@ -56,8 +78,7 @@ async function contact_collapse(){
 
 /*************************************************************AGE****** */
 
-const ageElement = document.getElementById("age");
-const dayElement = document.getElementById("day");
+
 
 const date = new Date();
 const year = date.getFullYear();
@@ -95,8 +116,7 @@ language.addEventListener('click', ()=>{
 });*/
 
 /********************************************************************Mobile menu***** */
-const menu_btn = document.getElementById("menu-btn");
-const side_menu = document.getElementById("side-nav");
+
 let menu_toggle = 0;
 
 menu_btn.addEventListener('click', () => {
@@ -176,10 +196,42 @@ Array.from(list_of_skills).forEach(e => {
 
 
 /*******************************************************************SIDE NAV*********************** */
-const side_nav = document.getElementById("side-nav");
-const side_links = document.getElementsByClassName("side-link");
+
 Array.from(side_links).forEach(e => {
     e.addEventListener('click', () => {
         side_nav.style.display = 'none';
     })
 })
+
+//highlight menu items if visible
+const side_nav_items = document.getElementsByClassName('side-nav-item');
+
+for (d in main_divs) {
+    if (d.offsetParent !== null){
+        console.log(d + 'is visible')
+        for (e of side_nav_items){
+            if (e.firstChild.href = `#${e}`){
+                
+            }
+        }
+    }
+}
+
+
+/********************************ABOUTME */
+const about = document.getElementById('aboutMe')
+window.addEventListener('scroll', o => {
+    let color = getComputedStyle(about)['background-color'];
+    let colorNumber = color.split('(');
+    colorNumber = colorNumber[1].split(')');
+    colorNumber = colorNumber[0].split(',');
+    let new_color = []
+    colorNumber.forEach(x => {
+        let nx = Number(x)
+        nx -= 1
+        new_color.push(nx)
+    });
+    console.log(`rgb(${new_color.join()})`)
+    
+    //about.style.backgroundColor = `rgb(${new_color.join()})`
+});

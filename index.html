@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-            <ul class="nav navbar-expand-lg bg-light myNav justify-content-between">
+            <ul class="nav navbar-expand-lg bg-white myNav justify-content-between">
                 <h3 id="mobile-header">Mohamad Sarfi</h3>
                 <button class="navbar-toggler" id="menu-btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                     <img src="images/menu.png" alt="menu" width="40px" height="40px">
@@ -18,12 +18,12 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">    
-                        <li class="nav-item myLi"> <p class="nav-link links myLi navbar-brand" id="brand" href="#"> Mohamad Sarfi</p>  </li>
-                        <li class="nav-item myLi"> <a class="myLi nav-link active links " href="#"> Home</a>  </li>
-                        <li class="nav-item myLi"><a class="nav-link links myLi" href="#aboutMe">About me</a>  </li>
-                        <li class="nav-item myLi"><a class="nav-link links myLi" href="#experience">Experiences </a> </li>
-                        <li class="nav-item myLi"> <a class="nav-link links myLi" href="#skills"> Skills </a> </li>
-                        <li class="nav-item myLi"> <a class="nav-link links myLi" href="#Certifications"> Certifications </a> </li>
+                        <li class="nav-item myLi"> <p class="nav-link links text-dark myLi navbar-brand" id="brand" href="#"> Mohamad Sarfi</p>  </li>
+                        <li class="nav-item myLi"> <a class="myLi nav-link text-black-50 active links " href="#"> Home</a>  </li>
+                        <li class="nav-item myLi"><a class="nav-link links text-black-50 myLi" href="#aboutMe">About me</a>  </li>
+                        <li class="nav-item myLi"><a class="nav-link links text-black-50 myLi" href="#experience">Experiences </a> </li>
+                        <li class="nav-item myLi"> <a class="nav-link links text-black-50 myLi" href="#skills"> Skills </a> </li>
+                        <li class="nav-item myLi"> <a class="nav-link links text-black-50 myLi" href="#certifications"> Certifications </a> </li>
                     </ul>   
                     
                         <ul class="navbar-nav mr-auto my-2 my-lg-0" id="language-div">
@@ -40,8 +40,11 @@
                 <li class="nav-item side-nav-item"> <a class="side-link" href="#aboutMe"><span class="side-nav-item-txt">About me</span><img class="side-nav-icon" src="images/side_nav_icons/user.png"></a> </li>
                 <li class="nav-item side-nav-item"><a class="side-link" href="#experience"> <span class="side-nav-item-txt">Experiences</span><img class="side-nav-icon" src="images/side_nav_icons/job.png"></a> </li>
                 <li class="nav-item side-nav-item"><a class="side-link" href="#skills"> <span class="side-nav-item-txt">Skills</span> <img class="side-nav-icon" src="images/side_nav_icons/code.png"> </a> </li>
+                <li class="nav-item side-nav-item"><a class="side-link" href="#certifications"> <span class="side-nav-item-txt">Skills</span> <img class="side-nav-icon" src="images/side_nav_icons/certificate.png"> </a> </li>
             </ul>
     </header>
+
+    <!-------------------------------------------HOME------------------------------>
     <div id="home">
         <div id="black-cover">
             <div class="typing-container">
@@ -87,55 +90,67 @@
     
     <!-- ***********************************************************Experiences ************************************* -->
     <div id="experience">
-        <fieldset id="experienceField">
-            <legend class="job-title">Experiences</legend>    
+        <h4 id="experience-title1">Experiences</h4>
+        <div id="experience-container">
             
-        
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingOne">
-                    <button class="job-title accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    Computer science teacher - IranTVTO
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class=" accordion-text accordion-body ">
-                    <p class="job-description"> teaching javascript,HTML/CSS, Python, Kotlin, digital marketing and working on graphic design projects (posters, social media posts, carousels, infographics and ...) and providing IT support, helping with online classes.</p>
-                    <p class="job-description"><a href="http://www.irantvto.ir" target="_blank">IranTVTO</a> is the top state organization in Iran for technical and vocational trainings.</p>
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingTwo">
-                    <button class="job-description accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    Self-employed developer and data analyst
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body accordion-text">
-                    <p class="job-description">As a self Self-employed developer and data analyst I've been working on a list projects:</p>
-                    <ul class="projects-list job-description">
-                        <li>Farm management Android app</li>
-                        <li>Analyzing bank data</li>
-                        <li>Financial management app with Python</li>
-                    </ul>
-                    </div>
-                </div>
-                </div>
-                <div class="accordion-item">
-                <h2 class="accordion-header" id="headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    English teacher - Mofid language school
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="accordion-body accordion-text">
-                    <p class="job-description">Teaching English upto B2 level.</p>
-                    </div>
-                </div>
+            <div class="experience-cards">
+                <h5 class="experience-title">Computer science teacher</h5>
+                <h6 class="experience-inst-time">Iran TVTO, 2019 - now</h6>
+                <p class="experience-explain">
+                    Working as a computer science teacher in <a class="experience-links" href="#">Iran TVTO</a>, top state organization in Iran for technical and vocational trainings.</p>
+                </p>
+            </div>
+            <div class="experience-cards">
+                <h5 class="experience-title">Software Developer and Data Analyst</h5>
+                <h6 class="experience-inst-time">Self-employed, 2018 - now</h6>
+                <p class="experience-explain">
+                    I've been writing code on my own for a couple years, however as I was busy with teaching I didn't have the time to work on a major one. The List of projects is as mentioned below:
+                </p>
+            </div>
+            <div class="experience-cards">
+                <h5 class="experience-title">English teacher</h5>
+                <h6 class="experience-inst-time">Mofid language school, 2016 - 2019</h6>
+                <p class="experience-explain">
+                    I've worked as an english teacher in a local language school. I've taught English upto B2 level.
+                </p>
+            </div>
+            
+        </div>
+        <div id="projects">
+            <div id="project-list">
+                <img src="images/projects.png" alt="projects-icon" class="icon-lg">
+                <div id="project-title">
+                    <h4 id="project-head4">Projects List</h4>
                 </div>
             </div>
-        </fieldset>
+            <div id="projects-container">
+                <div id="projects-container2">
+                   
+                    <div class="proj-cards">
+                        <h5 class="experience-title"> <a href="#" class="link-card" target="_blank">Farm management app</a></h5>
+                        <h6 class="experience-inst-time">Android - Kotlin/Java</h6>
+                    </div>
+                    </a>
+                    <div class="proj-cards">
+                        <h5 class="experience-title"><a href="#" class="link-card" target="_blank">Python book translation</a></h5>
+                        <h6 class="experience-inst-time">from English to Persian</h6>
+                    </div>
+                    <div class="proj-cards">
+                        <h5 class="experience-title"><a href="#" class="link-card" target="_blank">Financial management app</a></h5>
+                        <h6 class="experience-inst-time">Desktop - Python (PyQt)</h6>
+                    </div>
+                    <div class="proj-cards">
+                        <h5 class="experience-title"><a href="#" class="link-card" target="_blank">Portfolio website</a></h5>
+                        <h6 class="experience-inst-time">HTML/CSS, Javascript, jQuery, Bootstrap</h6>
+                    </div>
+                    <div class="proj-cards">
+                        <h5 class="experience-title"><a href="https://www.instagram.com/damghan_tvto/" class="link-card" target="_blank">Graphic Design</a></h5>
+                        <h6 class="experience-inst-time">Photoshop, Illustrator</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <!-- -----------------------------------------------------------SKILLS----------------------------->
