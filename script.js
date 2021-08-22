@@ -53,6 +53,28 @@ function waitForMS(ms) {
 typeSentence("Mohamad Sarfi", "sentence")
 deleteSentence("sentence")
 
+
+
+/********************************************************NEXT BOTTON JOBS**** */
+
+const next_button = document.getElementsByClassName('job-circle');
+
+
+Array.from(next_button).forEach(Element => {
+    
+    Element.addEventListener('click', () => {
+        
+        id = Element.id
+        id = id.split('-')
+        if (id[1] == 3) id[1] = 1
+        console.log(`#circle-${id[1]}`)
+        window.location = `#circle-${id[1]}`;
+    });
+})
+
+
+
+
 /***********************************************************************************Contact button***************/
 
 
