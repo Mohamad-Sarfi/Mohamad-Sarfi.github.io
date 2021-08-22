@@ -237,16 +237,41 @@ legend {
 #experience-container{
   display: flex;
   padding:3%;
-  flex-flow: row;
+  flex-flow: column;
+  width: auto;
+  margin: auto;
 }
 
 .experience-cards {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-  margin: 1px 8px;
+  margin: 35px auto;
   padding: 2%;
   border-radius: 8px;
   text-justify: auto;
+  width: 70%;
   background-image: linear-gradient(to right bottom, #ffffff, #f7f5ff);
+}
+
+.job-circle {
+  position: relative;
+  bottom: -40px;
+  margin: auto;
+  width: auto;
+  background-color: rgb(0, 127, 212);
+  width: 20%;
+  height: 30px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+}
+
+.job-period {
+  color: white;
+  text-align: center;
+  padding: 1%;
+}
+
+.job-circle:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px;
 }
 
 .experience-cards:hover {
@@ -330,9 +355,11 @@ legend {
 }
 
 .experience-title {
-  font-weight: 500;
+  font-weight: 550;
   display: block;
   text-align: center;
+  font-size: 1.3em;
+  color: rgb(0, 127, 212);
 }
 
 
@@ -358,6 +385,7 @@ legend {
   height: auto;
   display: flexbox;
   padding: 3% 8%;
+
 }
 
 #skill-title {
@@ -381,6 +409,7 @@ legend {
   padding: 4% 7%;
   width: auto;
   margin: 10px;
+  background-color: white;
   border-bottom: rgb(0, 127, 212) solid 6px;
 }
 
@@ -579,6 +608,8 @@ legend {
   height: auto;
   pad: 5px;
   margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 2%;
 }
 
 #certificate-title{
@@ -592,9 +623,11 @@ legend {
   text-align: center;
   width: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
+  background-color: white;
   border-radius: 20px;
   padding: 2%;
   border-bottom: rgb(0, 127, 212) solid 8px;
+  margin-top: 15px;
 }
 
 .cert-list-item {
@@ -603,6 +636,10 @@ legend {
   margin-bottom: 10px;
   border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
   padding-bottom: 3%;
+}
+
+.cert-list-item:hover {
+  border-bottom: rgba(0, 0, 0, 0.6) 3px solid;
 }
 
 .cert-inst{
@@ -678,10 +715,11 @@ legend {
     display: flex;
     padding:3%;
     flex-flow: wrap;
+    width: 90%;
   }
 
   .experience-cards {
-    margin: 10px 5px;
+    margin: 40px auto;
     padding: 6% 8%;
   }
   
@@ -792,6 +830,12 @@ legend {
 
   .proj-cards {
     padding: 5%;
-    flex-shrink: 3;
+    flex-shrink: 5;
+  }
+
+  .job-circle {
+    width: 70%;
   }
 }
+
+
