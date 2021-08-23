@@ -189,12 +189,16 @@ legend {
   background-color: rgba(0, 127, 212, 1);
 }
 
-#aboutMe-text {
+.aboutMe-text {
   color: white;
   text-align: left;
   margin: auto;
   width: auto;
   font-size: 1.1rem;
+}
+
+.aboutMe-list{
+  
 }
 
 #aboutMe-container {
