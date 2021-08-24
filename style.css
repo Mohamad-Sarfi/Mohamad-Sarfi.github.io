@@ -195,6 +195,7 @@ legend {
   margin: auto;
   width: auto;
   font-size: 1.1rem;
+  padding-right: 3%;
 }
 
 .aboutMe-list{
@@ -676,6 +677,8 @@ legend {
 
   #home {
     padding: 18% 4%;
+    background-image: url(images/photo_2021-08-24_09-54-26.jpg);
+    background-size: cover;
   }
 
   .input-cursor {
@@ -686,7 +689,7 @@ legend {
     margin-top: 60%;
     font-family: Tahoma;
     font-weight: 600;
-    color: rgb(0, 127, 212)
+    color: white
   }
 
   .side-nav-item {
