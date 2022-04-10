@@ -1,848 +1,329 @@
 body {
-  background-color: rgb(255, 16, 16);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#side-nav {
-  display: none;
-}
-
-#mobile-header {
-  display: none;
-}
-
-#brand {
-  color: rgb(30, 30, 30);
-  font-weight: 600;
-  border-right: rgb(97, 97, 97) solid 1.5px;
-  height: 50px;
-  padding-right: 30px;
-}
-
-h1 {
-  color: blueviolet;
-  margin-top: 30px;
-}
-
-.myLi {
-  margin: 10px 10px;
+a {
   color: black;
-}
-
-.links {
-  color: rgb(37, 37, 37);
+  font-style: normal;
   text-decoration: none;
-  font-weight: 550;
-  margin-left: 20px;
 }
 
-.myNav {
-  display: inline;
-  align-items: center;
-  height: auto;
+/************************************************** Nav *******************************/
+nav {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 102;
-}
-
-#home {
-  margin-top: 0%;
-  background-color: rgba(red, green, blue, 0);
-}
-
-#topTitle {
-  justify-self: end;
-}
-
-#language-btn {
-  margin-right: 25px;
-}
-
-#language-div{
-  display: none;
-}
-
-.visible-inline {
-  display: inline;
-}
-
-.hide {
-  display: none;
-}
-
-.language-img {
-  width: 40px;
-  height: 25px;
-  border-radius: 5px;
-  margin: 8px;
-}
-
-#experienceField {
-  margin: 30px 7%;
-  text-align: center;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgb(0, 127, 212);
-  color: white;
-  border-radius: 7px;
-}
-
-.accordion-text {
-  color: black;
-}
-
-.job-description {
-  text-align: left;
-}
-
-.projects-list{
-  text-align: left;
-  list-style: circle;
-}
-legend {
-  margin: 40px;
-  display: inline;
-}
-
-.job-title {
-  text-align: center;
-  color: white;
-}
-
-#home {
   width: 100%;
-  height:500px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-top: 4%;
-}
-
-#black-cover {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#contact-btn {
-  border-radius: 20px;
-  height: 55px;
-  width: 160px;
-  text-align: center;
-  justify-content: center;
-  color: white;
-  background-color: rgb(0, 127, 212);;
-  font-size: 20px;
-  font-weight: bolder;
-  margin-bottom: 30px;
-}
-
-#contacts-lists {
-  margin-top: 20px;
-  display: flex;
-  width: auto;
-  height: 100px;
-  opacity: 0;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  border:rgb(0, 127, 212) 4px solid;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2px 15px;
-  text-align: center;
-  margin: auto;
-}
-
-.contact-image {
-  margin: 20px;
-}
-
-.contact-image:hover {
-  width: 80px;
-  height: 80px;
-}
-
-#contact-btn:hover {
   background-color: white;
-  color: rgb(0, 127, 212);
-  border: rgb(0, 127, 212) 2px solid;
 }
-
-#contact-btn-holder {
-  justify-content: center;
-  text-align: center;
-  margin-top: 130px;
-}
-
-/******************************************************** about me ******************* #d85353 */
-#aboutMe{
-  width: 100%;
-  height: auto;
-  
-  background-image: url('images/back-keyboard.jpg');
-  background-attachment: fixed;
-  background-origin: padding-box;
-  background-size: cover;
-  background-color: rgba(0, 127, 212, 1);
-}
-
-.aboutMe-text {
-  color: white;
-  text-align: left;
-  margin: auto;
-  width: auto;
-  font-size: 1.1rem;
-  padding-right: 3%;
-}
-
-.aboutMe-list{
-  
-}
-
-#aboutMe-container {
-  padding: 60px 20px;
-  padding-left: 10%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-}
-
-#aboutMe-title{
-  color: white;
-  font-weight: 550;
-}
-
-/***** education***/
-#education {
-  margin-top: 30px;
-  width: 100%;
-  color: white;
-  list-style: inside;
-}
-
-.education-item {
-  font-weight: 1.2em;
-  margin: 10px 0;
-}
-
-#education-title {
-  font-weight: 550;
-}
-
-.education-name {
-  font-weight: 550;
-}
-
-
-/******************************************************Experience *************************************/
-
-#experience-container{
+.nav {
   display: flex;
-  padding:3%;
-  flex-flow: column;
-  width: auto;
-  margin: auto;
-}
-
-.experience-cards {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-  margin: 35px auto;
-  padding: 2%;
-  border-radius: 8px;
-  text-justify: auto;
-  width: 70%;
-  background-image: linear-gradient(to right bottom, #ffffff, #f7f5ff);
-}
-
-.job-circle {
-  position: relative;
-  bottom: -40px;
-  margin: auto;
-  width: auto;
-  background-color: rgb(0, 127, 212);
-  width: 20%;
-  height: 30px;
-  border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-}
-
-.job-period {
-  color: white;
-  text-align: center;
-  padding: 1%;
-}
-
-.job-circle:hover {
-  box-shadow: rgba(0, 0, 0, 0.24) 2px 3px 8px;
-}
-
-.experience-cards:hover {
-  box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
-}
-
-.experience-inst-time {
-  color: rgb(0, 127, 212);
-}
-
-.experience-links {
-  text-decoration: none;
-}
-
-
-
-#experience-title1 {
-  text-align: center;
-  margin-top: 15px;
-  color: rgb(0, 127, 212);
-  font-weight: 550;
-}
-
-/**********************************************PROJECTS*******************************/
-.proj-cards{
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 7px;
-  margin: 9px 8px;
-  padding: 2%;
-  border-radius: 8px;
-  text-justify: auto;
-  /*background-image: linear-gradient(to right bottom, #ffffff, #fbfaff);*/
-  background-color: white;
-  border-bottom: rgb(0, 127, 212) 3px solid;
-}
-
-.proj-cards:hover{
-  box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
-}
-
-
-#project-list {
-  display: inline;
-  margin-left: 0;
-  background-image: url('images/back-proj.jpg');
-  background-size: cover;
-
-  width: 18%;
-  padding: 8% 2%;
-
-}
-
-#project-list::before{
-  background-color: rgba(0, 0, 0, 1);
-}
-
-#project-head4{
-  color: white;
-  font-weight: 550;
-
-}
-
-#projects{
-  display: flex;
-  width: 100%;
-  
-}
-
-#projects-container{
-  display:inline;
-  padding: 2%;
-  background-color: rgba(0, 0, 0, 0.1);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-#projects-container2{
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-.experience-title {
-  font-weight: 550;
-  display: block;
-  text-align: center;
-  font-size: 1.3em;
-  color: rgb(0, 127, 212);
-}
-
-
-
-
-
-.icon-lg {
-  width: 50px;
-  height: auto;
-  margin: 20px auto;
-  display: block;
-}
-
-.link-card {
-  text-decoration: none;
-  color: inherit;
-}
-
-/******************************************************** skills ************************************************/
-
-#skills{
-  width: 100%;
-  height: auto;
-  display: flexbox;
-  padding: 3% 8%;
-
-}
-
-#skill-title {
-  text-align: center;
-  margin: 30px;
-  font-weight: 600;
-  color: rgb(0, 127, 212);
-}
-
-.skill-badges{
-  display: flex;
-  justify-content: space-around;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex-shrink: 4;
+  justify-content: space-around;
+  padding: 35px 50px;
+  flex-wrap: nowrap;
+
 }
 
-.skill-card {
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-  padding: 4% 7%;
-  width: auto;
-  margin: 10px;
-  background-color: white;
-  border-bottom: rgb(0, 127, 212) solid 6px;
+.nav-menu {
+  display: flex;
+  flex-direction: row;
 }
 
-.skill-card:hover {
-  box-shadow: rgba(0, 0, 0, 0.50) 0px 3px 8px;
-  border-bottom: rgb(255, 51, 78) solid 6px;
+.nav-menu li {
+  margin: 5px 35px; 
+  font-weight: 700;
+  color: rgb(81, 81, 81);
+  font-size: 14px;
 }
 
-#skill-details-back {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 12%;
-  padding-top: 5%;
-  display: none;
-}
-
-
-
-#skill-details {
-  width: 90%;
-  height: 80%;
-  padding: 2% 5%;
-  background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-  z-index: 100;
-  border-radius: 25px;
-  margin: auto;
-  text-align: center;
-  border-bottom: rgb(0, 127, 212) solid 8px;
-  position: relative;
-}
-
-#skill-img-details{
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.close-x {
-  width: 20px;
-  height: auto;
-  position: absolute;
-  top: 5%;
-  right: 5%;
-  z-index: 112;
-}
-
-#close-skill-details-btn:hover {
+.nav-menu li:hover{
+  color: black;
   cursor: pointer;
 }
 
-.skill-name {
-  text-align: center;
-  font-weight: 600;
-  font-size: 1.2em;
-  margin-top: 4px;
-  font-weight: 600;
-}
-.skill-img {
-  width: 80px;
-  height: auto;
+.selected {
+  color : black;
 }
 
-#skill-explain {
-  font-size: 1em;
-  text-align: justify;
-  font-weight: 550;
-}
-
-#skill-detail-list {
-  list-style: square;
-  list-style-position: inside;
-  text-align: left;
+.nav-title {
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-shrink: 3;
-  flex-direction: row;
-  width: auto;
+}
+
+.nav-title a {
+  font-size: 25px;
+  font-weight: 800;
+  color: black;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.nav-title:hover {
+  cursor: pointer;
+  color: black;
+
+}
+
+.nav-contact {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border: 1.8px blue solid;
+  padding: 1px 20px;
+  border-radius: 23px;
+  font-weight: 500;
+}
+
+.nav-contact:hover {
+  background-color: rgb(63, 63, 255);
+  color: white;
+  cursor: pointer;
+  border: 1.8px white solid;
+}
+
+.nav-drawer {
+  display: none;
+}
+
+.side-menu {
+  display: none;
+}
+
+  
+/*************************************************** Cover photo *********************/
+
+.cover{
+  width: 100%;
+  background-image: url("./images/portfolio1.jpg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 425px;
+  position: relative;
+  top: 85px;
+  z-index: -1;
+  padding-top: 15px;
+}
+
+.cover-txt {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 28px;
+  margin: 40px 30px;
+}
+
+.cover-name {
+  color: rgb(63, 63, 255);
+  margin-left: 10px;
+}
+
+/************************************************** contact ***************************/
+.contact {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 20px;
   flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+  padding-top: 10px;
 }
 
-.skill-detail-list-li {
-  font-size: 1em;
-  list-style: inside;
-  margin: 15px;
-  font-weight: 550;
+.about-me p {
+  margin-top: 30px;
+  width: 75vw;
 }
 
-
-
-
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    opacity: 1;
-  }
+.social-icon {
+  width: 40px;
+  display: inline;
+  margin: 5px;
 }
 
-.fadeIn {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  animation-direction: normal;
-  opacity: 1;
+.contact-list li{
+  display: inline;
+  margin: 10px 30px;
 }
 
-/************************************* Typing effect ***************************************************************/
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
+.contact-list li:hover {
+  cursor: pointer;
 }
-.typing-container {
+
+.hidden {
+  display: none;
+}
+
+.social-caption {
+  margin-top: 10px;
+}
+
+/********************************************* footer ****************************/
+footer {
+  background-color: rgb(53, 53, 53);
+  width: 100%;
+  position: relative;
+  top: 110px;
+  color: white;
+  margin-top: 50px;
+}
+
+.my-footer {
+  padding: 5px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.input-cursor {
-  margin-top: 70px;
-  display: inline-block;
-  width: 2px;
-  height: 42px;
-  background-color: white;
-  margin-left: 8px;
-  animation: blink 0.6s linear infinite alternate;
-}
-
-#sentence {
-  color: rgb(0, 40, 66);
-  font-weight: 600;
-  font-size: 3.3em;
-  margin-top: 80px;
-  font-family: Tahoma;
-}
-
-/***********************************************LANGUAGES ******************/
-#languages{
-  background-color: rgb(16, 111, 175);
-  
-  background-size: contain;
-  background-attachment: fixed;
-  background-repeat: repeat-x;
-  height: auto;
-  padding: 3% 5%;
-  text-align: center;
-}
-
-#lang-title{
-  font-weight: 550;
-  color: white;
-  margin-bottom: 25px;
-}
-
-#languages-card {
-  display: flex;
-  flex-shrink: 3;
-}
-
-.language-col{
-  display: flex;
-  margin: 20px;
-  width: 30%;
-}
-
-.language-flag-name {
-  margin: 15px;
-}
-
-.language-name {
-  color: white;
-  display: block;
-}
-
-/************************************************CERTIFICATE **********************************/
-
-#certifications{
-  width: 100%;
-  height: auto;
-  pad: 5px;
-  margin-top: 30px;
-  background-color: rgba(0, 0, 0, 0.1);
-  padding-top: 2%;
-}
-
-#certificate-title{
-  text-align: center;
-  font-weight: 550;
-  color: rgb(0, 127, 212);
-  margin: 20px;
-}
-
-#cert-list {
-  text-align: center;
-  width: auto;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-  background-color: white;
-  border-radius: 20px;
-  padding: 2%;
-  border-bottom: rgb(0, 127, 212) solid 8px;
-  margin-top: 15px;
-}
-
-.cert-list-item {
-  text-align: center;
-  margin: 25px;
-  margin-bottom: 10px;
-  border-bottom: rgba(0, 0, 0, 0.2) 2px solid;
-  padding-bottom: 3%;
-}
-
-.cert-list-item:hover {
-  border-bottom: rgba(0, 0, 0, 0.6) 3px solid;
-}
-
-.cert-inst{
-  color: rgb(0, 127, 212);
-  margin-right: 20px;
-}
-
-#cert-list-container {
-  width: 70%;
-  margin: auto;
-}
-
-/********************************************** MOBILE ****************************************/
-
-@media (max-width: 991px) {
 
 
-  #side-nav{
-    background-color: white;
-    position: fixed;
-    top: 30%;
-    right: 0;
-    z-index: 103;
-    height: auto;
-    padding: 5px 1%;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 7px;
-    border-bottom-left-radius: 15px;
-    border-top-left-radius: 15px;
+
+
+
+
+
+
+
+
+/********************************************* Mobile ****************************/
+@media (max-width: 600px) {
+
+  .nav {
+    padding: 20px 5px;
   }
-
-  #home {
-    padding: 18% 4%;
-    background-image: url(images/photo_2021-08-24_09-54-26.jpg);
-    background-size: cover;
-  }
-
-  .input-cursor {
-    margin-top: 60%;
-  }
-  
-  #sentence {
-    margin-top: 60%;
-    font-family: Tahoma;
-    font-weight: 600;
-    color: white
-  }
-
-  .side-nav-item {
-    margin: 30px;
-  }
-
-  .side-nav-icon {
-    width: 25px;
-    margin-left: 5px;
-    right: 12px;
-  }
-
-  .side-nav-item-txt {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-right: 20px;
-    color: white;
+  .nav-menu {
     display: none;
   }
 
-  #mobile-header {
-    display: inline;
-    text-align: center;
-    margin: 5px 20px;
-    font-weight: 550;
+  .nav-contact {
+    display: none;
   }
 
-  #experience-container{
-    display: flex;
-    padding:3%;
-    flex-flow: wrap;
-    width: 90%;
-  }
-
-  .experience-cards {
-    margin: 40px auto;
-    padding: 6% 8%;
-  }
-  
-
-  #skill-details {
-    margin: 5%;
-  }
-
-  .skill-card {
-    padding: 5% 10%;
-  }
-  
-
-  .myNav {
-    height: 16%;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 4px;
-  }
-
-
-  .input-cursor{
-    margin-top: 150px;
-  }
-
-  #contact-btn {
-    position: fixed;
-    bottom: 30px;
-    right: 40px;
-    background-image: url("images/call.png");
-    background-origin: content-box;
-    background-color: rgba(255, 255, 255, 0.7);
-    background-size: contain;
-    padding: 8px;
-    background-repeat: no-repeat;
-    width: 60px;
-    height: 60px;
-    font-size: 0%;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 40px;
-    border: rgb(0, 127, 212) 2px solid;
-  }
-
-
-  #contact-btn-holder{
-    display: flex;
+  .nav-title {
+    font-size: 25px;
+    font-weight: 800;
+    align-items: center;
     justify-content: center;
+    display: flex;
   }
 
-  #contacts-lists {
-    position: fixed;
-    bottom: 40px;
-    right: auto;
-    display: none;
-    width: auto;
-    margin: auto;
-    height: 90px;
-    opacity: 0;
-    padding: 0px 3%;
-    margin-left: 5px;
-    margin-right: 5px;
+  /************************************* Nav drawer *************************/
+
+  .nav {
     justify-content: space-around;
     align-items: center;
-    z-index: 101;
-    border-radius: 40px;
-    border:rgb(0, 127, 212) 3px solid;
-    background-color: rgba(255, 255, 255, 0.7);
   }
 
-  .job-description {
-    text-align: left;
-    font-size: 1.5em;
-  }
-
-  .cert-inst{
-    display: block;
-  }
-
-  .credit-link{
+  .nav-drawer {
     display: inline;
   }
 
-  #cert-list-container {
-    width: 90%;
-    margin: auto;
+  .nav-drawer img {
+    width: 30px;
   }
 
-  .education-inst {
-    display: block;
+  .nav-drawer img:hover {
+    cursor: pointer;
   }
 
-
-  /**************************************PROJECTS**************************/
-  #project-head4 {
-    writing-mode: vertical-lr;
-    text-orientation: sideways-right;
-    text-align: center;
-  }
-
-  #project-list {
+  .side-menu {
     display: flex;
+    position: fixed;
     flex-direction: column;
-    justify-content: center;
+    background-color: white;
+    height: 100vh;
+    padding: 10px;
+    width: 200px;
     align-items: center;
-    padding-left: 2%;
-    padding-right: 2%;
+    justify-content: center;
+    z-index: 10;
+    font-size: 18px;
+    font-weight: 600;
+    transform: translateX(-220px);
+    box-shadow: -3px 3px 23px -3px rgba(0,0,0,0.52);
+    -webkit-box-shadow: -3px 3px 23px -3px rgba(0,0,0,0.52);
+    -moz-box-shadow: -3px 3px 23px -3px rgba(0,0,0,0.52); 
+    transition: transform 0.5s;
   }
 
-  .proj-cards {
-    padding: 5%;
-    flex-shrink: 5;
+  .side-menu li {
+    margin: 15px 5px;
+    cursor: pointer;
+    padding: 8px 16px;
   }
 
-  .job-circle {
-    width: 70%;
+  .side-li:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    justify-content: center;
+    margin: 15px auto;
+    
   }
+
+  .side-menu.show {
+    transform: translateX(0);
+    transition: transform 0.5s;
+  }
+
+  .nav-drawer-close-btn {
+    cursor: pointer;
+  }
+
+  /************************************* cover*************************/
+  .cover-txt {
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+  }
+
+  .cover{
+    width: 100%;
+    background-image: url("./images/portfolio1.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    z-index: -1;
+  }
+
+
+  /*************************** social icons **************/
+  .social-icon {
+    width: 40px;
+  }
+  .contact-list li{
+    margin: 5px;
+  }
+
+  .contact-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 20px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    top: 5px;
+    padding-top: 25px;
+  }
+
+  footer {
+    top: 80px;
+  }
+
 }
-
-
