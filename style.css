@@ -100,13 +100,11 @@ nav {
   width: 100%;
   background-image: url("./images/portfolio1.jpg");
   background-position: center;
-  background-size: contain;
+  background-size:contain;
   background-repeat: no-repeat;
-  height: 425px;
-  position: relative;
-  top: 85px;
+  height: 510px;
   z-index: -1;
-  padding-top: 15px;
+  padding-top: 70px;
 }
 
 .cover-txt {
@@ -131,10 +129,14 @@ nav {
   font-size: 20px;
   flex-wrap: wrap;
   flex-direction: row;
-  position: relative;
-  top: 100px;
   padding: 10px;
   background-color: white;
+}
+
+.contact-list {
+  padding-left: 0;
+  padding-bottom: 0;
+  margin: 20px ;
 }
 
 .about-me p {
@@ -176,12 +178,11 @@ nav {
   background-size: cover;
   background-attachment: fixed;
   padding: 40px;
-  position: relative;
-  top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .skill-item {
@@ -208,10 +209,7 @@ nav {
 footer {
   background-color: rgb(53, 53, 53);
   width: 100%;
-  position: relative;
-  top: 110px;
   color: white;
-  margin-top: 50px;
 }
 
 .my-footer {
@@ -321,22 +319,19 @@ footer {
   .cover{
     width: 100%;
     background-image: url("./images/portfolio1.jpg");
-    background-attachment: fixed;
-    background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 400px;
-    position: relative;
-    top: 50px;
+    background-position: bottom;
+    height: 410px;
     z-index: -1;
-  
+    padding-top: 100px;
   }
 
   .cover-txt {
     font-weight: 600;
     font-size: 20px;
     display: flex;
-    margin: 15px 30px;
+    margin: 2px 30px;
   }
 
   
@@ -365,8 +360,6 @@ footer {
     font-size: 20px;
     flex-wrap: wrap;
     flex-direction: row;
-    position: relative;
-    top: 0px;
   }
 
   footer {
@@ -376,8 +369,7 @@ footer {
 
 
   .skill-set {
-    display: relative;
-    top: 50px;
+
   }
 
 }
