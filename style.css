@@ -14,6 +14,7 @@ nav {
   top: 0;
   width: 100%;
   background-color: white;
+  z-index: 20;
 }
 .nav {
   display: flex;
@@ -114,6 +115,7 @@ nav {
   font-weight: 700;
   font-size: 28px;
   margin: 40px 30px;
+  padding: 5px 50px;
 }
 
 .cover-name {
@@ -131,7 +133,8 @@ nav {
   flex-direction: row;
   position: relative;
   top: 100px;
-  padding-top: 10px;
+  padding: 10px;
+  background-color: white;
 }
 
 .about-me p {
@@ -161,6 +164,45 @@ nav {
 .social-caption {
   margin-top: 10px;
 }
+
+/***************************************** skills ********************************/
+
+.skilss {
+  width: 100%;
+}
+
+.skill-set {
+  background-image:  url("images/cover-grad.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 40px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  margin: 15px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill-item:hover {
+  cursor: pointer;
+}
+
+.skill-item h5{
+  font-size: 24px;
+  margin-top: 15px;
+  color: white;
+  font-weight: 600;
+}
+
 
 /********************************************* footer ****************************/
 footer {
@@ -240,7 +282,7 @@ footer {
     width: 200px;
     align-items: center;
     justify-content: center;
-    z-index: 10;
+    z-index: 21;
     font-size: 18px;
     font-weight: 600;
     transform: translateX(-220px);
@@ -275,15 +317,11 @@ footer {
   }
 
   /************************************* cover*************************/
-  .cover-txt {
-    font-weight: 600;
-    font-size: 20px;
-    display: flex;
-  }
 
   .cover{
     width: 100%;
     background-image: url("./images/portfolio1.jpg");
+    background-attachment: fixed;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -291,12 +329,22 @@ footer {
     position: relative;
     top: 50px;
     z-index: -1;
+  
   }
+
+  .cover-txt {
+    font-weight: 600;
+    font-size: 20px;
+    display: flex;
+    margin: 15px 30px;
+  }
+
+  
 
 
   /*************************** social icons **************/
   .social-icon {
-    width: 40px;
+    width: 38px;
   }
   .contact-list li{
     margin: 5px;
@@ -318,12 +366,18 @@ footer {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    top: 5px;
-    padding-top: 25px;
+    top: 0px;
   }
 
   footer {
     top: 80px;
+  }
+
+
+
+  .skill-set {
+    display: relative;
+    top: 50px;
   }
 
 }
