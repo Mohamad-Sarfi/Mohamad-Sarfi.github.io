@@ -159,6 +159,15 @@ nav {
   cursor: pointer;
 }
 
+@keyframes fadein{
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.animate-in {
+  animation: fadein 1s;
+}
+
 .hidden {
   display: none;
 }
@@ -169,14 +178,24 @@ nav {
 
 /***************************************** skills ********************************/
 
-.skilss {
+.skills {
   width: 100%;
-}
-
-.skill-set {
   background-image:  url("images/cover-grad.jpg");
   background-size: cover;
   background-attachment: fixed;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  padding: 35px;
+  color: white;
+  font-size: 23px;
+  font-weight: 600;
+  justify-content: center;
+  text-align: center;
+}
+
+.skill-set {
+ 
   padding: 40px;
   display: flex;
   flex-direction: row;
@@ -187,10 +206,14 @@ nav {
 
 .skill-item {
   margin: 15px 50px;
-  display: flex;
+  
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.show{
+  display: flex;
 }
 
 .skill-item:hover {
@@ -204,6 +227,36 @@ nav {
   font-weight: 600;
 }
 
+.skill-detail:hover {
+  cursor: pointer;
+}
+
+/********************************************* Interests ************************/
+.intersts {
+  display: flex;
+  flex-direction: row;
+}
+
+.interest-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.interest-item {
+  display: flex;
+  flex-direction: row;
+  padding: 15px;
+  -webkit-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.41);
+  -moz-box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.41);
+  box-shadow: -1px 1px 12px -3px rgba(0,0,0,0.41);
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.interest-item h4 {
+  margin-right: 15px;
+}
 
 /********************************************* footer ****************************/
 footer {
@@ -324,7 +377,7 @@ footer {
     background-position: bottom;
     height: 410px;
     z-index: -1;
-    padding-top: 100px;
+    padding-top: 90px;
   }
 
   .cover-txt {
@@ -366,10 +419,15 @@ footer {
     top: 80px;
   }
 
+  .skills {
+    height: 650px;
+    text-align: justify;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-
-  .skill-set {
-
+  .skill-detail {
+    margin: auto;
   }
 
 }
