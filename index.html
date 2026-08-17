@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohammad Sarfi — Android Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="code-bg" aria-hidden="true"></div>
+
+  <header class="navbar">
+    <a class="logo" href="#top">&lt;MS /&gt;</a>
+    <nav>
+      <a href="#skills">skills</a>
+      <a href="#experience">experience</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <small>~/resume</small>
+        </div>
+        <div class="terminal-body">
+          <p class="muted">$ whoami</p>
+          <h1>Mohammad Sarfi</h1>
+          <p class="role"><span>Android Developer</span> <span class="cursor">_</span></p>
+          <p class="hero-text">
+            I build modern Android applications with Kotlin, Java and Jetpack Compose,
+            focusing on clean architecture, reliable UX and maintainable code. </br>
+            I speak fluent English, German, Persian, and basic French. I am currently based in Munich, Germany.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#contact">./contact_me</a>
+            <a class="btn" href="#projects">./view_projects</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-side">
+        <div class="code-card">
+          <span class="line-no">01</span><span>const</span> developer = {<br>
+          <span class="line-no">02</span>&nbsp;&nbsp;role: <em>"Android Developer"</em>,<br>
+          <span class="line-no">03</span>&nbsp;&nbsp;languages: [<em>"Kotlin"</em>, <em>"Java"</em>],<br>
+          <span class="line-no">04</span>&nbsp;&nbsp;focus: [<em>"Fintech"</em>, <em>"Clean Architecture"</em>, <em>"MVVM"</em>],<br>
+          <span class="line-no">05</span>&nbsp;&nbsp;location: <em>"Munich, Germany"</em><br>
+          <span class="line-no">06</span>};
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section-label">// 01 — skills</p>
+      <h2>My <span>toolbox.</span></h2>
+      <div class="skills-grid">
+        <div class="skill-card"><b>Android</b><p>Kotlin · Java · Jetpack Compose · Android SDK</p></div>
+        <div class="skill-card"><b>Architecture</b><p>MVVM · Clean Architecture · Repository Pattern</p></div>
+        <div class="skill-card"><b>Data</b><p>Room · REST APIs · JSON · Firebase / Firestore</p></div>
+        <div class="skill-card"><b>Tools</b><p>Git · Gradle · Android Studio · CI/CD</p></div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <p class="section-label">// 02 — experience</p>
+      <h2>Where I've <span>worked.</span></h2>
+      <div class="timeline">
+        <article>
+          <span class="date">2023 — Present</span>
+          <div>
+            <h3>Android Developer</h3>
+            <p class="company">petaFuel GmbH · Munich, Germany</p>
+            <p>Developing and maintaining VIMpay app, implementing new features, improving architecture and collaborating across the development lifecycle.</p>
+          </div>
+        </article>
+        <article>
+          <span class="date">Earlier</span>
+          <div>
+            <h3>Software Development</h3>
+            <p class="company">Android · Java · Kotlin</p>
+            <p>Built application features, worked with APIs and data layers, and developed a strong foundation in object-oriented and mobile software engineering.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-label">// 03 — projects</p>
+      <h2>Things I've <span>built.</span></h2>
+      <div class="projects-grid">
+        <article class="project">
+          <div class="project-top"><span>01</span><span>ANDROID</span></div>
+          <h3>Habit Tracker</h3>
+          <p>A modern Android habit-tracking application with a clean UI, local persistence and cloud synchronization.</p>
+          <div class="tags"><span>Kotlin</span><span>Compose</span><span>Room</span><span>Firestore</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span>02</span><span>ANDROID</span></div>
+          <h3>Mobile Applications</h3>
+          <p>Production-focused Android work involving reusable UI components, networking, state management and maintainable architecture.</p>
+          <div class="tags"><span>Java</span><span>Kotlin</span><span>MVVM</span></div>
+        </article>
+        <article class="project">
+          <div class="project-top"><span>03</span><span>ANDROID</span></div>
+          <h3>Persian Date Picker for Compose</h3>
+          <p>In order to get hands-on experience with Jetpack Compose, I've developed a custom Persian date picker component based on Material Design principles.</p>
+          <div class="tags"><span>Compose</span><span>Kotlin</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="section-label">// 04 — contact</p>
+      <h2>Let's build something <span>great.</span></h2>
+      <p>Have a project, opportunity or just want to talk software?</p>
+      <div class="contact-links">
+        <a href="mailto:sarfimohamad46@gmail.com">sarfimohamad46@gmail.com</a>
+        <a href="https://github.com/Mohamad-Sarfi" target="_blank" rel="noopener">https://github.com/Mohamad-Sarfi</a>
+        <a href="https://www.linkedin.com/in/mohammad-sarfi" target="_blank" rel="noopener">linkedin.com/in/mohammad-sarfi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Mohammad Sarfi</span>
+    <span>built with HTML · CSS · JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
